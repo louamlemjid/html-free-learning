@@ -9,6 +9,19 @@
     <link rel="icon" type="image/x-icon" href="image/icon/favicon.ico">
 </head>
 <body>
+    <style>
+        @media (max-width:515px){
+            nav>a,.cours-nav a,#selected{
+                font-size: 10px;
+                margin: 0; 
+                display: flex;
+                
+            }
+            
+        }
+        
+        
+    </style>
     <header>
         <img src="image/logo.png" width="100" style="margin: 0;" alt="my website logo" class="logo">
         <nav>
@@ -22,15 +35,32 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <br><br><br><br>
-    
-    <nav class="blog-nav">
-        Blog
-        <a>Actualité</a>
-        <a>Categorie</a>
-        <a href="histoire-de-leducation.html">Histoire de l'éducation</a>
-        <a href="https://everydough.wordpress.com/">Mon blog</a>
-    </nav>
-    
+    <h1>Blog</h1>
+    <header>
+        <nav class="cours-nav" >
+            <ul>
+                <li ><a>Liste de contenue</a>
+                    <ul class="menu">
+                        <li  ><a href="./chatgbt.html">chat-gbt</a></li>
+                        <li ><a href="./howto.html">howto</a></li>
+                        <li ><a href="./histoire-de-leducation.html">l'histoire de l'education</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li ><a>l'histoire de l'education </a>
+                    <ul class="menu">
+                        <li ><a href="./chatgbt.html">chat-gbt</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a>Mon blog de cuisine</a>
+                    <ul class="menu">
+                        
+                    </ul>
+                </li>
+               </ul>
+        </nav>
+    </header>
 </body>
 </html>

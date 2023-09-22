@@ -9,6 +9,16 @@
     <title>L'histoire de l'éducation et l'Âge d'or arabe </title>
 </head>
 <body>
+    <style>
+        @media (max-width:515px){
+            nav>a,.cours-nav a,#selected{
+                font-size: 10px;
+                margin: 0; 
+                display: flex;
+                
+            }
+        }
+    </style>
     <header>
         <img src="image/logo.png" width="100" style="margin: 0;" alt="my website logo" class="logo">
         <nav>
@@ -20,6 +30,32 @@
             <a href="signin.html">Signin</a>
             <a href="blog.html" id="selected">Blog</a>
             <a href="contact.html">Contact</a>
+        </nav>
+    </header><br>
+    <header>
+        <nav class="cours-nav" >
+            <ul>
+                <li ><a>Liste de contenue</a>
+                    <ul class="menu">
+                        <li  ><a href="./chatgbt.html">chat-gbt</a></li>
+                        <li ><a href="./howto.html">howto</a></li>
+                        <li ><a href="./histoire-de-leducation.html">l'histoire de l'education</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li ><a>l'histoire de l'education </a>
+                    <ul class="menu">
+                        <li ><a href="./chatgbt.html">chat-gbt</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a>Mon blog de cuisine</a>
+                    <ul class="menu">
+                        
+                    </ul>
+                </li>
+               </ul>
         </nav>
     </header>
     <div id="blocblog">

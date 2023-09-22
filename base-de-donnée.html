@@ -9,7 +9,16 @@
     <title>Base de données</title>
 </head>
 <body>
-    
+    <style>
+        @media (max-width:515px){
+            nav>a,.cours-nav a,#selected{
+                font-size: 10px;
+                margin: 0; 
+                display: flex;
+                
+            }
+        }
+    </style>
     <header>
         <img src="image/logo.png" width="100" style="margin: 0;" alt="my website logo" class="logo">
         <nav>
@@ -57,10 +66,10 @@
         </nav>
     </header>
     <main id="blocb">
-        <div class="matiere"><h4>Introduction</h4></div>
-        <div class="matiere"><h4>Algebre relationnel</h4></div>
-        <div class="matiere"><h4>SQL</h4></div>
-        <div class="matiere"><h4>Sqlite3</h4></div>
+        <div class="matiere"><a><h4>Introduction</h4></a></div>
+        <div class="matiere"><a><h4>Algebre relationnel</h4></a></div>
+        <div class="matiere"><a><h4>SQL</h4></a></div>
+        <div class="matiere"><a><h4>Sqlite3</h4></a></div>
         
     </main>
 </body>

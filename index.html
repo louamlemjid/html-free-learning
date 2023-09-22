@@ -8,9 +8,37 @@
     <!--script defer src="https://py-script.net/alpha/py-script.js"></script-->
 </head>
 <body>
-    
+    <style>
+        @media (max-width:515px){
+            nav>a,.cours-nav a,#selected{
+                font-size: 10px;
+                margin: 0; 
+                display: flex;
+                
+            }
+            .recherche,form{
+                width: 90%;
+            }
+            #bienvenue,#intro-img,#ali,#intro,footer{
+                width: 95%;
+            }
+            #inro-img{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 2fr 1fr;
+            }
+            #intro-img>div,#intro-img>h2{
+                grid-column: span 2;
+            }
+            #study,#hstudy{
+                width: 31%;
+                margin: 0;
+                padding: 45%;
+            }
+        }
+    </style>
     <header>
-        <img src="image/logo.png" width="100"  alt="my website logo" class="logo">
+        <img src="image/aaa.svg" width="40"  alt="my website logo" class="logo" >
         <nav >
             
             <a href="index.html" id="selected">Home</a>
@@ -44,28 +72,25 @@
     <br>
     <script src="index.js"></script>
     <section id="bienvenue" >
-        <div style="width: 60%;">
-            <h2 style="font-size: 45px; ">Bienvenue à LouamAcademie</h2>
-            <p>Bienvenue sur notre site d'éducation, votre source d'apprentissage en ligne ultime ! <br>
-                Explorez notre vaste collection de cours interactifs, enrichissants et adaptés à tous les niveaux.
-                <br> Développez vos compétences, élargissez vos connaissances et préparez-vous à un avenir brillant
-                <br> grâce à notre plateforme d'apprentissage intuitive. Rejoignez-nous dès maintenant et commencez
-                <br> votre voyage vers l'excellence éducative !</p>
-                <br><a href="signup.html" >Devenir un membre </a>      <a href="signin.html">S'identifier</a>
-        </div>
-        
-        <video controls width="500px"autoplay class="video">
+        <h2 style="font-size: 45px; ">Bienvenue à LouamAcademie</h2>
+        <video controls width="500px" class="video">
             <source src="video/intro.mp4" >
         </video>
+        <p>Bienvenue sur notre site d'éducation, votre source d'apprentissage en ligne ultime ! <br>
+            Explorez notre vaste collection de cours interactifs, enrichissants et adaptés à tous les niveaux.
+            <br> Développez vos compétences, élargissez vos connaissances et préparez-vous à un avenir brillant
+            <br> grâce à notre plateforme d'apprentissage intuitive. Rejoignez-nous dès maintenant et commencez votre voyage vers l'excellence éducative !</p>
+        <p><a href="signup.html" class="memb" >Devenir un membre </a></p>
+        <p><a href="signin.html" class="inscri">S'identifier</a></p>
+        
     </section>
     <br>
     <div id="intro-img">
         <h2>Aprendre à programmer facilement avec LouamAcademie</h2>
-        <img src="image/study.png" id="study" width="300">
-        <img src="image/bluecat.gif" id="hstudy" width="300">
-        <div>
-            <p>Le premier pas en coding est le plus difficile, mais avec ce platforme on vous guide à depasser cette lacune.</p>
-        </div>
+        <img src="./image/study.png" id="study" >
+        <img src="./image/bluecat.gif" id="hstudy" >
+        <p>Le premier pas en coding est le plus difficile, mais avec ce platforme on vous guide à depasser cette lacune.</p>
+        
     </div>    
     <br>
 
@@ -98,7 +123,7 @@
     
     <div id="intro">
         <h2>Introduction à la programmation</h2>
-        <video controls width="500px" class="video">
+        <video controls  class="video">
             <source src="video/introduction.mp4">
         </video>
         <p><a href="https://www.youtube.com/watch?v=SlX_j8lkaNI&list=PL9vepVEZZ9AHqkiza9d2cW_yqzbK-S7rP&ab_channel=LouamAcademie">Youtube/link</a></p>
